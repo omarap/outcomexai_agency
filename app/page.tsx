@@ -82,7 +82,7 @@ export default function HomePage() {
       </Section>
 
       {/* ================= WHO WE ARE ================= */}
-      <Section id="about" title="Who We Are" className="bg-white">
+      <Section id="who-we-are" title="Who We Are" className="bg-white">
         <Reveal>
           <div className="max-w-3xl mx-auto px-6 py-10 space-y-6 text-gray-800">
             <p>

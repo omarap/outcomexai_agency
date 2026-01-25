@@ -11,20 +11,20 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <>
-      <Section title="Who We Are">
+      <Section id="who-we-are" title="Who We Are">
         <p className="max-w-3xl text-neutral-700">
           Outcomex AI is a performance-intelligence partner helping institutions
           make data-driven decisions without complexity.
         </p>
       </Section>
 
-      <Section title="Our Mission">
+      <Section id="our-mission" title="Our Mission">
         <p className="max-w-3xl text-neutral-700">
           To turn data into clarity, foresight, and measurable outcomes.
         </p>
       </Section>
 
-      <Section title="Our Vision">
+      <Section id="our-vision" title="Our Vision">
         <p className="max-w-3xl text-neutral-700">
           To become Africa’s most trusted AI outcomes partner for institutions.
         </p>

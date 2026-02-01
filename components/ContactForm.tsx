@@ -9,11 +9,18 @@ interface ContactFormProps {
 export default function ContactForm({ formspreeEndpoint }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
 
-  return submitted ? (
-    <p className="text-center text-green-600 font-medium">
-      Thank you! We received your request and will contact you soon.
-    </p>
-  ) : (
+  const inputClass =
+    "w-full px-4 py-3 bg-white text-gray-900 border border-gray-300 rounded-md placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-500";
+
+  if (submitted) {
+    return (
+      <p className="text-center text-green-600 font-medium">
+        Thank you! We received your request and will contact you soon.
+      </p>
+    );
+  }
+
+  return (
     <form
       action={formspreeEndpoint}
       method="POST"
@@ -24,32 +31,36 @@ export default function ContactForm({ formspreeEndpoint }: ContactFormProps) {
         type="text"
         name="name"
         placeholder="Full Name"
-        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
+        className={inputClass}
       />
+
       <input
         type="email"
         name="email"
         placeholder="Email Address"
-        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         required
+        className={inputClass}
       />
+
       <input
         type="text"
         name="organization"
         placeholder="Organization"
-        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className={inputClass}
       />
+
       <textarea
         name="message"
         placeholder="Message"
-        className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
         rows={4}
         required
+        className={inputClass}
       />
+
       <button
         type="submit"
-        className="bg-blue-700 text-white px-6 py-3 rounded hover:bg-blue-800 transition"
+        className="bg-blue-700 text-white py-3 rounded-md hover:bg-blue-800 transition font-medium"
       >
         Submit
       </button>

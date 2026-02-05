@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://outcomexai.com
+
+# Sitemaps
+Sitemap: https://outcomexai.com/sitemap.xml

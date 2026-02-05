@@ -10,6 +10,7 @@ export const siteMetadata: Metadata = {
     "Outcomex AI helps NGOs, healthcare providers, education networks, and agribusinesses reduce costs, improve compliance, and make data-driven decisions using outcome-driven AI systems.",
 
   keywords: [
+    "Outcomex AI",
     "AI consulting",
     "Outcome-driven AI",
     "AI for NGOs",

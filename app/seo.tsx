@@ -25,6 +25,12 @@ export const siteMetadata: Metadata = {
   authors: [{ name: "Outcomex AI" }],
   creator: "Outcomex AI",
 
+  metadataBase: new URL("https://outcomexai.com/"),
+
+  verification: {
+    google: "wGbmCQ_MZIFA64Oi39IHH2843mJ32WMbTdIQzb3liOk",
+  },
+
   openGraph: {
     title: "Outcomex AI | Outcome-Driven AI Systems",
     description:
@@ -55,6 +61,4 @@ export const siteMetadata: Metadata = {
     index: true,
     follow: true,
   },
-
-  metadataBase: new URL("https://outcomexai.com/"),
 };
